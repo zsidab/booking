@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
     try:
         driver = prepare_driver(domain)
-        fill_form(driver, 'Hotel Parlament Budapest', '2020-12-23', '2020-12-24')
+        fill_form(driver, 'Hotel Clark Budapest', '2020-12-23', '2020-12-24')
         accommodations_data = scrape_results(driver, 1)
         accommodations_data = json.dumps(accommodations_data, indent=4)
         with open('booking_data.json', 'w') as f:
